@@ -247,7 +247,7 @@ open class ContactsPicker: UIViewController, UITableViewDelegate, UITableViewDat
                 }
             })
             
-        case  CNAuthorizationStatus.authorized:
+        case  CNAuthorizationStatus.authorized, CNAuthorizationStatus.limited:
             //Authorization granted by user for this app.
             var contactsArray = [CNContact]()
             
